@@ -12,7 +12,6 @@ getorset
 [david-image]: http://img.shields.io/david/chunpu/getorset.svg?style=flat-square
 [david-url]: https://david-dm.org/chunpu/getorset
 
-[![Test coverage][coveralls-image]][coveralls-url]
 
 Get or Set a value from object
 
@@ -34,6 +33,7 @@ var getorset = require('getorset')
 var obj = {
 	foo: 'bar'
 }
+
 var ret = getorset(obj, 'foo2', [])
 console.log(ret.foo2) // => []
 ```
@@ -45,7 +45,5 @@ License
 
 [travis-image]: https://img.shields.io/travis/chunpu/getorset.svg?style=flat-square
 [travis-url]: https://travis-ci.org/chunpu/getorset
-[coveralls-image]: https://img.shields.io/coveralls/chunpu/getorset/gh-pages.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/chunpu/getorset
 [license-image]: http://img.shields.io/npm/l/getorset.svg?style=flat-square
 [license-url]: #
