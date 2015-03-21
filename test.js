@@ -4,9 +4,12 @@ var assert = require('assert')
 describe('getorset', function() {
 	it('should return key haven', function() {
 		assert.equal('bar', getorset({foo: 'bar'}, 'foo', []))
+		assert.equal('', getorset({foo: ''}, 'foo', []))
 	})
 
 	it('should create a object', function() {
+		assert.deepEqual({}, getorset({foo: null}, 'foo'))
+		assert.deepEqual({}, getorset({}, 'foo'))
 		assert.deepEqual({}, getorset({foo: 'bar'}, 'oof'))
 	})
 
